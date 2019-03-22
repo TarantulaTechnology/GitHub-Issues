@@ -29,6 +29,6 @@ GITHUB_ISSUES_PRINT_MESSAGES=true
 
 Set this environment variable if you want to ensure you get all
 issues available and mitigate the rate limit. This will cause the program to sleep for 30 seconds when it
-detects a potential rate limit violation approaching.
+detects a potential rate limit violation approaching, which is enough time for the rate limit to reset.
 
 GITHUB_ISSUES_PACING=true
