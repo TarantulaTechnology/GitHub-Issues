@@ -2,6 +2,6 @@ Github-Issues was a coding exercise--I designed and coded this in about 12 hours
 
 
 
- [![JavaDoc](http://tarantulatechnology.com/github-issues/javadoc/)]
+http://tarantulatechnology.com/github-issues/javadoc
  
 
