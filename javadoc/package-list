@@ -1,1 +1,4 @@
 mm.issues
+mm.issues.model
+mm.issues.provider
+mm.issues.util
