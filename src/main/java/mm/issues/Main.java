@@ -56,7 +56,7 @@ public class Main {
 
     /**
      * 
-     * main calls CommandlinProcessor to run the searches async concurrently
+     * main calls CommandlineProcessor to run the searches async concurrently
      * using {@code CompletableFutures}.
      * 
      * @param args String array with Github repositories with the format
