@@ -100,6 +100,7 @@ public class GitHubIssueProvider implements IssueProvider {
 		String username = env.get("GITHUB_ISSUES_USERNAME");
 		String password = env.get("GITHUB_ISSUES_PASSWORD");
 		String pacing = env.get("GITHUB_ISSUES_PACING");
+		int rateLimitGate = 0;
 		
 		// get api object
 		github = getGitHubApi(username, password);
@@ -117,7 +118,15 @@ public class GitHubIssueProvider implements IssueProvider {
 	
 			Integer rl = new Integer(rateLimitRemaining.get(0));
 			
-			if( rl < 10 ) {
+			if(password != null && !password.isEmpty()) {
+				// authenticated requests have higher rate 30
+				rateLimitGate = 10;
+			} else {
+				// default requests have lower rate 10
+				rateLimitGate = 5;
+			}
+			
+			if( rl < rateLimitGate ) {
 				if(pacing != null && pacing.toLowerCase().equals("true")) {
 					try {
 						Util.log("Rate limit is close to max, so sleeping for 30 seconds.");
