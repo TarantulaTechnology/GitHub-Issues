@@ -6,17 +6,17 @@ package mm.issues;
  * {@code CompletableFutures}.
  * <br><br>
  * 
- * GitHub Issues -------------<br>
+ * GitHub Issues <br>
  *<br>
  * Create a program that generates a report about the the Issues belonging to a
  * list of github repositories ordered by creation time, and information about
  * the day when most Issues were created.<br>
  *<br>
- * Input: ----- List of 1 to n Strings with Github repositories references with
+ * Input: List of 1 to n Strings with Github repositories references with
  * the format "owner/repository"<br>
  *<br>
  *
- * Output: ------ String representation of a Json dictionary with the following
+ * Output: String representation of a Json dictionary with the following
  * content:<br>
  *<br>
  * - "issues": List containing all the Issues related to all the repositories
@@ -34,7 +34,7 @@ package mm.issues;
  * "owner1/repository1": 8, "owner2/repository2": 0, "owner3/repository3": 2 } }
  *<br><br>
  *
- * Output example: --------------<br>
+ * Output example: <br>
  *
  * {<br>
  * "issues": [ { "id": 38, "state": "open", "title": "Found a bug",<br>
@@ -46,7 +46,7 @@ package mm.issues;
  * "day": "2011-04-22", "occurrences": { "owner1/repository1": 2,<br>
  * "owner2/repository2": 0 } } }<br>
  *<br>
- * --------------------------------------------------------<br>
+ * <br>
  *<br>
  * You can create the classes and methods you consider. You can use any library
  * you need. Good modularization, error control and code style will be taken
