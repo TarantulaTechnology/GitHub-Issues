@@ -126,7 +126,7 @@ public class Util {
 	static String errMsgPart = "getIssues version 1.0\nUsage: java -jar getIssues.jar [p] owner1/repo1 owner2/repo-2 owner3/repo_3 ...\n"
 			+ "The optional first argument p instructs the code to return the JSON string in pretty format.\n"
 			+ "NOTE: GitHub enforces a rate limit of 10 per minute and you will experience it when you enter\n"
-			+ "many owner/repo entries or you continously execute too fast.\n"
+			+ "many owner/repo entries or you continuously execute too fast.\n"
 			+ "You can login to GitHub by entering: your_username and your_password\n"
 			+ "to improve your rate limit. The rate limit is increased to 30.\n"
 			+ "Set the following environment variables to login to github.\n"
