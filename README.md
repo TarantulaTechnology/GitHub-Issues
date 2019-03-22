@@ -1,2 +1,1 @@
-github-issues
-This was a coding exercise. The code is self-documenting. I created this in about 12 hours over the course of 3 days from start to finish. 
+Github-Issues was a coding exercise--I did this in about 12 hours over 3 days, start to finish. 
