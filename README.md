@@ -28,7 +28,7 @@ Set this environment variable if you want to print job stats at the end.
 GITHUB_ISSUES_PRINT_MESSAGES=true
 
 Set this environment variable if you want to ensure you get all
-issues available and avoid the rate limit. This will cause the program to sleep for 30 seconds when it
+issues available and mitigate the rate limit. This will cause the program to sleep for 30 seconds when it
 detects a potential rate limit violation approaching.
 
 GITHUB_ISSUES_PACING=true
