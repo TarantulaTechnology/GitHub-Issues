@@ -4,6 +4,8 @@ Github-Issues was a coding exercise--I designed and coded this in about 12 hours
 
 http://tarantulatechnology.com/github-issues/javadoc
 
+http://tarantulatechnology.com/github-issues/uml/
+
 
 getIssues version 1.0
 
