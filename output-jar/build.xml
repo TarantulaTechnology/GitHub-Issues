@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project markmorris-github-issues with Jar-in-Jar Loader">
+    <!--this file was created by Eclipse Runnable JAR file Export Wizard-->
+    <!--ANT 1.7 is required-->
+    <!--define folder properties-->
+    <property name="dir.buildfile" value="."/>
+    <property name="dir.workspace" value="${dir.buildfile}/../.."/>
+    <property name="dir.jarfile" value="${dir.buildfile}"/>
+    <target name="create_run_jar">
+        <jar destfile="${dir.jarfile}/getIssues.jar">
+            <manifest>
+                <attribute name="Main-Class" value="org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader"/>
+                <attribute name="Rsrc-Main-Class" value="mm.issues.Main"/>
+                <attribute name="Class-Path" value="."/>
+                <attribute name="Rsrc-Class-Path" value="./ org.junit.jupiter.api_5.3.1.v20181005-1442.jar org.junit.jupiter.engine_5.3.1.v20181005-1442.jar org.junit.jupiter.migrationsupport_5.3.1.v20181005-1442.jar org.junit.jupiter.params_5.3.1.v20181005-1442.jar org.junit.platform.commons_1.3.1.v20181005-1442.jar org.junit.platform.engine_1.3.1.v20181005-1442.jar org.junit.platform.launcher_1.3.1.v20181005-1442.jar org.junit.platform.runner_1.3.1.v20181005-1442.jar org.junit.platform.suite.api_1.3.1.v20181005-1442.jar org.junit.vintage.engine_5.3.1.v20181005-1442.jar org.opentest4j_1.1.1.v20181005-1442.jar org.apiguardian_1.0.0.v20181005-1442.jar junit.jar org.hamcrest.core_1.3.0.v20180420-1519.jar hamcrest-core-1.3.jar javax.json-api-1.0.jar jcabi-github-1.0.jar jcabi-aspects-0.22.5.jar validation-api-1.1.0.Final.jar jcabi-immutable-1.4.jar jcabi-xml-0.18.1.jar jcabi-http-1.16.jar jcabi-manifests-1.1.jar xembly-0.22.jar antlr-runtime-3.5.2.jar jcabi-log-0.17.2.jar commons-io-2.4.jar commons-lang3-3.4.jar hamcrest-library-1.3.jar guava-19.0-rc2.jar aspectjrt-1.8.7.jar javax.json-1.0.4.jar jersey-server-2.17.jar jersey-common-2.17.jar jersey-guava-2.17.jar osgi-resource-locator-1.0.1.jar jersey-client-2.17.jar javax.ws.rs-api-2.0.1.jar jersey-media-jaxb-2.17.jar javax.annotation-api-1.2.jar hk2-api-2.4.0-b10.jar hk2-utils-2.4.0-b10.jar aopalliance-repackaged-2.4.0-b10.jar javax.inject-2.4.0-b10.jar hk2-locator-2.4.0-b10.jar javassist-3.18.1-GA.jar httpcore-4.4.6.jar httpclient-4.5.3.jar commons-logging-1.2.jar commons-codec-1.9.jar slf4j-simple-1.6.2.jar slf4j-api-1.6.2.jar"/>
+            </manifest>
+            <zipfileset src="jar-in-jar-loader.zip"/>
+            <fileset dir="${dir.workspace}/markmorris-github-issues/target/classes"/>
+            <zipfileset dir="/Applications/SpringToolSuite4.app/Contents/Eclipse/plugins" includes="org.junit.jupiter.api_5.3.1.v20181005-1442.jar"/>
+            <zipfileset dir="/Applications/SpringToolSuite4.app/Contents/Eclipse/plugins" includes="org.junit.jupiter.engine_5.3.1.v20181005-1442.jar"/>
+            <zipfileset dir="/Applications/SpringToolSuite4.app/Contents/Eclipse/plugins" includes="org.junit.jupiter.migrationsupport_5.3.1.v20181005-1442.jar"/>
+            <zipfileset dir="/Applications/SpringToolSuite4.app/Contents/Eclipse/plugins" includes="org.junit.jupiter.params_5.3.1.v20181005-1442.jar"/>
+            <zipfileset dir="/Applications/SpringToolSuite4.app/Contents/Eclipse/plugins" includes="org.junit.platform.commons_1.3.1.v20181005-1442.jar"/>
+            <zipfileset dir="/Applications/SpringToolSuite4.app/Contents/Eclipse/plugins" includes="org.junit.platform.engine_1.3.1.v20181005-1442.jar"/>
+            <zipfileset dir="/Applications/SpringToolSuite4.app/Contents/Eclipse/plugins" includes="org.junit.platform.launcher_1.3.1.v20181005-1442.jar"/>
+            <zipfileset dir="/Applications/SpringToolSuite4.app/Contents/Eclipse/plugins" includes="org.junit.platform.runner_1.3.1.v20181005-1442.jar"/>
+            <zipfileset dir="/Applications/SpringToolSuite4.app/Contents/Eclipse/plugins" includes="org.junit.platform.suite.api_1.3.1.v20181005-1442.jar"/>
+            <zipfileset dir="/Applications/SpringToolSuite4.app/Contents/Eclipse/plugins" includes="org.junit.vintage.engine_5.3.1.v20181005-1442.jar"/>
+            <zipfileset dir="/Applications/SpringToolSuite4.app/Contents/Eclipse/plugins" includes="org.opentest4j_1.1.1.v20181005-1442.jar"/>
+            <zipfileset dir="/Applications/SpringToolSuite4.app/Contents/Eclipse/plugins" includes="org.apiguardian_1.0.0.v20181005-1442.jar"/>
+            <zipfileset dir="/Applications/SpringToolSuite4.app/Contents/Eclipse/plugins/org.junit_4.12.0.v201504281640" includes="junit.jar"/>
+            <zipfileset dir="/Applications/SpringToolSuite4.app/Contents/Eclipse/plugins" includes="org.hamcrest.core_1.3.0.v20180420-1519.jar"/>
+            <zipfileset dir="/Volumes/WDCWD10JPLX/markmorris/.m2/repository/org/hamcrest/hamcrest-core/1.3" includes="hamcrest-core-1.3.jar"/>
+            <zipfileset dir="/Volumes/WDCWD10JPLX/markmorris/.m2/repository/javax/json/javax.json-api/1.0" includes="javax.json-api-1.0.jar"/>
+            <zipfileset dir="/Volumes/WDCWD10JPLX/markmorris/.m2/repository/com/jcabi/jcabi-github/1.0" includes="jcabi-github-1.0.jar"/>
+            <zipfileset dir="/Volumes/WDCWD10JPLX/markmorris/.m2/repository/com/jcabi/jcabi-aspects/0.22.5" includes="jcabi-aspects-0.22.5.jar"/>
+            <zipfileset dir="/Volumes/WDCWD10JPLX/markmorris/.m2/repository/javax/validation/validation-api/1.1.0.Final" includes="validation-api-1.1.0.Final.jar"/>
+            <zipfileset dir="/Volumes/WDCWD10JPLX/markmorris/.m2/repository/com/jcabi/jcabi-immutable/1.4" includes="jcabi-immutable-1.4.jar"/>
+            <zipfileset dir="/Volumes/WDCWD10JPLX/markmorris/.m2/repository/com/jcabi/jcabi-xml/0.18.1" includes="jcabi-xml-0.18.1.jar"/>
+            <zipfileset dir="/Volumes/WDCWD10JPLX/markmorris/.m2/repository/com/jcabi/jcabi-http/1.16" includes="jcabi-http-1.16.jar"/>
+            <zipfileset dir="/Volumes/WDCWD10JPLX/markmorris/.m2/repository/com/jcabi/jcabi-manifests/1.1" includes="jcabi-manifests-1.1.jar"/>
+            <zipfileset dir="/Volumes/WDCWD10JPLX/markmorris/.m2/repository/com/jcabi/incubator/xembly/0.22" includes="xembly-0.22.jar"/>
+            <zipfileset dir="/Volumes/WDCWD10JPLX/markmorris/.m2/repository/org/antlr/antlr-runtime/3.5.2" includes="antlr-runtime-3.5.2.jar"/>
+            <zipfileset dir="/Volumes/WDCWD10JPLX/markmorris/.m2/repository/com/jcabi/jcabi-log/0.17.2" includes="jcabi-log-0.17.2.jar"/>
+            <zipfileset dir="/Volumes/WDCWD10JPLX/markmorris/.m2/repository/commons-io/commons-io/2.4" includes="commons-io-2.4.jar"/>
+            <zipfileset dir="/Volumes/WDCWD10JPLX/markmorris/.m2/repository/org/apache/commons/commons-lang3/3.4" includes="commons-lang3-3.4.jar"/>
+            <zipfileset dir="/Volumes/WDCWD10JPLX/markmorris/.m2/repository/org/hamcrest/hamcrest-library/1.3" includes="hamcrest-library-1.3.jar"/>
+            <zipfileset dir="/Volumes/WDCWD10JPLX/markmorris/.m2/repository/com/google/guava/guava/19.0-rc2" includes="guava-19.0-rc2.jar"/>
+            <zipfileset dir="/Volumes/WDCWD10JPLX/markmorris/.m2/repository/org/aspectj/aspectjrt/1.8.7" includes="aspectjrt-1.8.7.jar"/>
+            <zipfileset dir="/Volumes/WDCWD10JPLX/markmorris/.m2/repository/org/glassfish/javax.json/1.0.4" includes="javax.json-1.0.4.jar"/>
+            <zipfileset dir="/Volumes/WDCWD10JPLX/markmorris/.m2/repository/org/glassfish/jersey/core/jersey-server/2.17" includes="jersey-server-2.17.jar"/>
+            <zipfileset dir="/Volumes/WDCWD10JPLX/markmorris/.m2/repository/org/glassfish/jersey/core/jersey-common/2.17" includes="jersey-common-2.17.jar"/>
+            <zipfileset dir="/Volumes/WDCWD10JPLX/markmorris/.m2/repository/org/glassfish/jersey/bundles/repackaged/jersey-guava/2.17" includes="jersey-guava-2.17.jar"/>
+            <zipfileset dir="/Volumes/WDCWD10JPLX/markmorris/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.1" includes="osgi-resource-locator-1.0.1.jar"/>
+            <zipfileset dir="/Volumes/WDCWD10JPLX/markmorris/.m2/repository/org/glassfish/jersey/core/jersey-client/2.17" includes="jersey-client-2.17.jar"/>
+            <zipfileset dir="/Volumes/WDCWD10JPLX/markmorris/.m2/repository/javax/ws/rs/javax.ws.rs-api/2.0.1" includes="javax.ws.rs-api-2.0.1.jar"/>
+            <zipfileset dir="/Volumes/WDCWD10JPLX/markmorris/.m2/repository/org/glassfish/jersey/media/jersey-media-jaxb/2.17" includes="jersey-media-jaxb-2.17.jar"/>
+            <zipfileset dir="/Volumes/WDCWD10JPLX/markmorris/.m2/repository/javax/annotation/javax.annotation-api/1.2" includes="javax.annotation-api-1.2.jar"/>
+            <zipfileset dir="/Volumes/WDCWD10JPLX/markmorris/.m2/repository/org/glassfish/hk2/hk2-api/2.4.0-b10" includes="hk2-api-2.4.0-b10.jar"/>
+            <zipfileset dir="/Volumes/WDCWD10JPLX/markmorris/.m2/repository/org/glassfish/hk2/hk2-utils/2.4.0-b10" includes="hk2-utils-2.4.0-b10.jar"/>
+            <zipfileset dir="/Volumes/WDCWD10JPLX/markmorris/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.4.0-b10" includes="aopalliance-repackaged-2.4.0-b10.jar"/>
+            <zipfileset dir="/Volumes/WDCWD10JPLX/markmorris/.m2/repository/org/glassfish/hk2/external/javax.inject/2.4.0-b10" includes="javax.inject-2.4.0-b10.jar"/>
+            <zipfileset dir="/Volumes/WDCWD10JPLX/markmorris/.m2/repository/org/glassfish/hk2/hk2-locator/2.4.0-b10" includes="hk2-locator-2.4.0-b10.jar"/>
+            <zipfileset dir="/Volumes/WDCWD10JPLX/markmorris/.m2/repository/org/javassist/javassist/3.18.1-GA" includes="javassist-3.18.1-GA.jar"/>
+            <zipfileset dir="/Volumes/WDCWD10JPLX/markmorris/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6" includes="httpcore-4.4.6.jar"/>
+            <zipfileset dir="/Volumes/WDCWD10JPLX/markmorris/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3" includes="httpclient-4.5.3.jar"/>
+            <zipfileset dir="/Volumes/WDCWD10JPLX/markmorris/.m2/repository/commons-logging/commons-logging/1.2" includes="commons-logging-1.2.jar"/>
+            <zipfileset dir="/Volumes/WDCWD10JPLX/markmorris/.m2/repository/commons-codec/commons-codec/1.9" includes="commons-codec-1.9.jar"/>
+            <zipfileset dir="/Volumes/WDCWD10JPLX/markmorris/.m2/repository/org/slf4j/slf4j-simple/1.6.2" includes="slf4j-simple-1.6.2.jar"/>
+            <zipfileset dir="/Volumes/WDCWD10JPLX/markmorris/.m2/repository/org/slf4j/slf4j-api/1.6.2" includes="slf4j-api-1.6.2.jar"/>
+        </jar>
+    </target>
+</project>
